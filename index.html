@@ -134,9 +134,7 @@
 
 </div>
 
-<img class="big desk"  src="img/image1.jpg"/>
-<img class="big mob"  src="img/phone_need.jpg"/>
-
+<img id="fordesktop" class="big desk"  src="img/image1.jpg"/>
 
 <div class="text-content">
     <p>Коштом держбюджету у профучилищах навчають робітників за 19 професіями. Вони містяться у переліку <a href=“https://mon.gov.ua/ua/osvita/profesijno-tehnichna-osvita/vstupna-kampaniya/profesiyi-derzhavnogo-znachennya”>«професій державного значення»</a>, що переглядався і у 2018 році. З топ-100 вакансій тут є лише три: токарі, монтери колій та виноградарі. Немає трактористів, продавців, швачок та медсестер.</p>
@@ -304,6 +302,16 @@
         посиланням. Велике прохання ставити гіперпосилання в першому чи другому абзаці вашого матеріалу.
     </div>
 </div>
+<script src="lib/jquery-2.1.4.min.js"></script>
+
+<script>
+    if(screen.width < 800){
+        $("#fordesktop").attr("src", "img/phone_need.jpg")
+    }
+    if(screen.width >= 800){
+        $("#fordesktop").attr("src", "img/image1.jpg")
+    }
+</script>
 
 <script type="text/javascript">
     var _gaq = _gaq || [];
