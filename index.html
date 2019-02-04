@@ -305,11 +305,12 @@
 <script src="lib/jquery-2.1.4.min.js"></script>
 
 <script>
+    var picture = document.getElementById("fordesktop");
     if(screen.width < 800){
-        $("#fordesktop").attr("src", "img/phone_need.jpg")
+        picture.src = "img/phone_need.jpg"
     }
     if(screen.width >= 800){
-        $("#fordesktop").attr("src", "img/image1.jpg")
+        picture.src = "img/image1.jpg"
     }
 </script>
 
