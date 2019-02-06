@@ -304,14 +304,29 @@
 
 <script>
     var picture = document.getElementById("fordesktop");
-    if(screen.width < 800){
+    if(screen.width < 500){
         picture.src = "img/phone_need.jpg";
+        document.getElementsByClassName("text-content")[0].style.width = "96%";
         document.getElementsByClassName("text-content")[1].style.width = "96%";
     }
-    if(screen.width >= 800){
+    if(screen.width >= 500){
         picture.src = "img/0602_need-01.svg";
+        document.getElementsByClassName("text-content")[0].style.width = "60%";
         document.getElementsByClassName("text-content")[1].style.width = "60%";
     }
+
+    screen.orientation.addEventListener("change", function(e) {
+        if(screen.width < 500){
+            picture.src = "img/phone_need.jpg";
+            document.getElementsByClassName("text-content")[0].style.width = "96%";
+            document.getElementsByClassName("text-content")[1].style.width = "96%";
+        }
+        if(screen.width >= 500){
+            picture.src = "img/0602_need-01.svg";
+            document.getElementsByClassName("text-content")[0].style.width = "60%";
+            document.getElementsByClassName("text-content")[1].style.width = "60%";
+        }
+    }, false);
 </script>
 
 <script type="text/javascript">
