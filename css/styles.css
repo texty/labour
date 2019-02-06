@@ -264,12 +264,10 @@ p {
     text-decoration: none; }
 
 img.small {
-  width: 60%;
-  margin-left: 20%; }
+  width: 100%; }
 
 img.big {
-  width: 70%;
-  margin: 2px 0 20px 15%; }
+  width: 100%; }
 
 #chart {
   height: max-content;
