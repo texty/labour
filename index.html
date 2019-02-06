@@ -306,8 +306,8 @@
     var picture = document.getElementById("fordesktop");
     if(screen.width < 500){
         picture.src = "img/phone_need.jpg";
-        document.getElementsByClassName("text-content")[0].style.width = "96%";
-        document.getElementsByClassName("text-content")[1].style.width = "96%";
+        document.getElementsByClassName("text-content")[0].style.width = "90%";
+        document.getElementsByClassName("text-content")[1].style.width = "90%";
     }
     if(screen.width >= 500){
         picture.src = "img/0602_need-01.svg";
@@ -318,8 +318,8 @@
     screen.orientation.addEventListener("change", function(e) {
         if(screen.width < 500){
             picture.src = "img/phone_need.jpg";
-            document.getElementsByClassName("text-content")[0].style.width = "96%";
-            document.getElementsByClassName("text-content")[1].style.width = "96%";
+            document.getElementsByClassName("text-content")[0].style.width = "90%";
+            document.getElementsByClassName("text-content")[1].style.width = "90%";
         }
         if(screen.width >= 500){
             picture.src = "img/0602_need-01.svg";
