@@ -322,4 +322,21 @@ img.big {
 #modelid_d79ff85d-4ea5-4708-af74-91d5fce109ae {
   margin: auto; }
 
+/*----- Scroll arrow -----*/
+#arrow-down {
+  text-align: center; }
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+
 /*# sourceMappingURL=styles.css.map */
