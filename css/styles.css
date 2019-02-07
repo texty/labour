@@ -325,6 +325,9 @@ img.big {
 /*----- Scroll arrow -----*/
 #arrow-down {
   text-align: center; }
+  @media (max-width: 800px) {
+    #arrow-down {
+      display: none; } }
 
 .bounce {
   -moz-animation: bounce 2s infinite;

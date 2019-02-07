@@ -307,9 +307,10 @@
 
 <script>
 setTimeout(function(){
-    var coverHeight = document.getElementById("cover").getBoundingClientRect().height;
-    document.getElementById("arrow-down").style.top = coverHeight - (window.innerWidth/10) + "px";
-    $("#arrow-down").append('<img id="arrow-down-pic" title="скрольте вниз" style="width:5vw;" src="img/arrow-down2.png"/>');
+
+        var coverHeight = document.getElementById("cover").getBoundingClientRect().height;
+        document.getElementById("arrow-down").style.top = coverHeight - (window.innerWidth / 10) + "px";
+        $("#arrow-down").append('<img id="arrow-down-pic" title="скрольте вниз" style="width:5vw;" src="img/arrow-down2.png"/>');
 
 
     window.addEventListener("resize", function(){
